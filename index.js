@@ -43,31 +43,14 @@ document.addEventListener('click', (e) => {
 });
 
     // Disable scrolling when the dropdown is active.
-    // Re-enable scrolling when the dropdown is closed.
     document.querySelector(".dropdown-menu").addEventListener("mouseenter", () => {
-    document.body.style.overflow = "hidden"; // Prevent scrolling
-});
-
+      document.body.style.overflow = "hidden"; // Prevent scrolling
+    });
+    
+    // Re-enable scrolling when the dropdown is closed.
 document.querySelector(".dropdown-menu").addEventListener("mouseleave", () => {
     document.body.style.overflow = "auto"; // Restore scrolling
 });
 
 
-// header slideShow 
-// let slideIndex = 0;
-
-// function showSlides() {
-//     let slides = document.getElementsByClassName("slide");
-//     for (let i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none";
-//     }
-//     slideIndex++;
-//     if (slideIndex > slides.length) {
-//         slideIndex = 1;
-//     }
-//     slides[slideIndex - 1].style.display = "block";
-//     setTimeout(showSlides, 3000); // Change slide every 3 seconds
-// }
-
-// showSlides();
 
